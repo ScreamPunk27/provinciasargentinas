@@ -1,0 +1,252 @@
+@import url("https://fonts.googleapis.com/css2?family=Gluten:wght@900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+header {
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+  background: url("/img/fotoPortada.jpg"), #000;
+  background-blend-mode: screen;
+}
+
+.inicio {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  text-align: center;
+  font-family: 'Gluten', cursive;
+}
+
+.inicio h1 {
+  font-size: 4.5em;
+  color: #ECF0F1;
+  text-shadow: 2px 2px 2px #000;
+  text-transform: uppercase;
+}
+
+.inicio #btn-empezarJuego {
+  margin-top: 1em;
+  font-family: sans-serif;
+  font-size: 1em;
+  font-weight: 600;
+  letter-spacing: 2px;
+  padding: 1em 2em;
+  text-transform: uppercase;
+  background: #82E0AA;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  -webkit-box-shadow: 1px 1px 5px 1px #000;
+          box-shadow: 1px 1px 5px 1px #000;
+}
+
+.inicio #btn-empezarJuego:active {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.inicio.ocultarInicio {
+  display: none;
+}
+
+.juego {
+  display: none;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #DCDCDC;
+  height: 100vh;
+  width: 100vw;
+  padding: 1em;
+}
+
+.juego .imagen-mapa {
+  position: relative;
+}
+
+.juego .imagen-mapa svg {
+  width: 40%;
+  fill: #ECF0F1;
+  stroke: #000;
+  stroke-width: 5px;
+}
+
+.juego .imagen-mapa svg #ARG1272 {
+  fill: #28B463;
+}
+
+.juego .imagen-mapa img {
+  height: 600px;
+}
+
+.juego .provincias {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.juego .provincias label {
+  color: #000;
+  display: block;
+  margin-bottom: .5em;
+}
+
+.juego .provincias #label-titulo {
+  margin-top: 1em;
+  font-size: 1.5em;
+}
+
+.juego .provincias #label-nombre {
+  font-size: 1.5em;
+}
+
+.juego .provincias input {
+  display: inline-block;
+  background: rgba(0, 0, 0, 0.2);
+  margin-bottom: 1em;
+  font-size: 1.2em;
+  border: none;
+  padding: .5em;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+}
+
+.juego .provincias input:focus {
+  outline: none;
+  border: none;
+  background: #F8F8FF;
+  -webkit-box-shadow: inset 0 -3px 0 #000;
+          box-shadow: inset 0 -3px 0 #000;
+}
+
+.juego .provincias #nombreInput {
+  display: inline-block;
+}
+
+.juego .provincias button {
+  padding: .5em 1em;
+  font-size: 1.1em;
+  color: #fff;
+  background: crimson;
+  text-transform: uppercase;
+  border-radius: 5px;
+  cursor: pointer;
+  border: none;
+  -webkit-box-shadow: 2px 2px 2px #000;
+          box-shadow: 2px 2px 2px #000;
+  -webkit-transition: all .2s ease;
+  transition: all .2s ease;
+}
+
+.juego .provincias button:active {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.juego .provincias .stCruz input,
+.juego .provincias .stCruz button {
+  display: none;
+}
+
+.juego .provincias .chubut input,
+.juego .provincias .chubut button {
+  display: none;
+}
+
+.juego .provincias .neuquen input,
+.juego .provincias .neuquen button,
+.juego .provincias .buenos input,
+.juego .provincias .buenos button,
+.juego .provincias .pampa input,
+.juego .provincias .pampa button,
+.juego .provincias .rio input,
+.juego .provincias .rio button,
+.juego .provincias .entre input,
+.juego .provincias .entre button,
+.juego .provincias .fe input,
+.juego .provincias .fe button,
+.juego .provincias .cordoba input,
+.juego .provincias .cordoba button,
+.juego .provincias .sanLuis input,
+.juego .provincias .sanLuis button,
+.juego .provincias .mendoza input,
+.juego .provincias .mendoza button,
+.juego .provincias .corrientes input,
+.juego .provincias .corrientes button,
+.juego .provincias .misiones input,
+.juego .provincias .misiones button,
+.juego .provincias .chaco input,
+.juego .provincias .chaco button,
+.juego .provincias .santiago input,
+.juego .provincias .santiago button,
+.juego .provincias .tucuman input,
+.juego .provincias .tucuman button,
+.juego .provincias .catamarca input,
+.juego .provincias .catamarca button,
+.juego .provincias .rioja input,
+.juego .provincias .rioja button,
+.juego .provincias .sanJuan input,
+.juego .provincias .sanJuan button,
+.juego .provincias .formosa input,
+.juego .provincias .formosa button,
+.juego .provincias .salta input,
+.juego .provincias .salta button,
+.juego .provincias .jujuy input,
+.juego .provincias .jujuy button {
+  display: none;
+}
+
+.juego.mostrarJuego {
+  display: -ms-grid;
+  display: grid;
+}
+
+#efectoOk {
+  display: none;
+}
+
+.contenido-juego {
+  display: none;
+}
+
+.contenido-juego.mostrar {
+  display: block;
+}
+
+.contenido-nombre.ocultar {
+  display: none;
+}
+
+.contenido-final {
+  display: none;
+  text-align: center;
+}
+
+.contenido-final h1 {
+  font-size: 2em;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: .8em;
+}
+
+.contenido-final p {
+  font-size: 1.2em;
+  font-weight: 500;
+}
+/*# sourceMappingURL=estilos.css.map */
